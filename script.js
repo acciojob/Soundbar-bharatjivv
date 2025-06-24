@@ -7,12 +7,12 @@ sounds.forEach(sound => {
   btn.classList.add('btn');
   btn.innerText = sound;
   
-  const audio = new Audio(`sounds/${sound}.mp3`);
-  audioElements.push(audio);
+//   const audio = new Audio(`sounds/${sound}.mp3`);
+//   audioElements.push(audio);
 
   btn.addEventListener('click', () => {
     stopSounds();
-    audio.play();
+    // audio.play();
   });
 
   buttonsContainer.appendChild(btn);
