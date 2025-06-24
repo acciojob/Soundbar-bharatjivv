@@ -10,10 +10,8 @@ const audios = [
 function playSound(index) {
   stopSounds();
   const audio = audios[index];
-//   audio.play();
+  audio.play();
   audio.dataset.playing = "true";
-
-  
 }
 
 function stopSounds() {
