@@ -13,9 +13,7 @@ function playSound(index) {
 //   audio.play();
   audio.dataset.playing = "true";
 
-  audio.onended = () => {
-    audio.dataset.playing = "false";
-  };
+  
 }
 
 function stopSounds() {
