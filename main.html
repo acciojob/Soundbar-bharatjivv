@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Soundbar</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="buttons"></div>
-    <button class="stop" onclick="stopSounds()">Stop</button>
+  <div id="buttons">
+    <button class="btn" onclick="playSound(0)">Play Sound 1</button>
+    <button class="btn" onclick="playSound(1)">Play Sound 2</button>
+    <button class="btn" onclick="playSound(2)">Play Sound 3</button>
+    <button class="btn" onclick="playSound(3)">Play Sound 4</button>
+    <button class="btn" onclick="playSound(4)">Play Sound 5</button>
+    <button class="btn" onclick="playSound(5)">Play Sound 6</button>
+  </div>
 
+  <button class="stop" onclick="stopSounds()">Stop</button>
 
+  <!-- Hidden audio elements -->
+  <audio id="audio0" src="sounds/sound1.mp3"></audio>
+  <audio id="audio1" src="sounds/sound2.mp3"></audio>
+  <audio id="audio2" src="sounds/sound3.mp3"></audio>
+  <audio id="audio3" src="sounds/sound4.mp3"></audio>
+  <audio id="audio4" src="sounds/sound5.mp3"></audio>
+  <audio id="audio5" src="sounds/sound6.mp3"></audio>
 
-    <script type="text/javascript" src="./script.js">
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
