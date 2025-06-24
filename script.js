@@ -8,13 +8,20 @@ const audios = [
 ];
 
 function playSound(index) {
-  stopSounds(); // stop any currently playing audio
-//   audios[index].play();
+  stopSounds();
+  const audio = audios[index];
+//   audio.play();
+  audio.dataset.playing = "true";
+
+  audio.onended = () => {
+    audio.dataset.playing = "false";
+  };
 }
 
 function stopSounds() {
   audios.forEach(audio => {
     audio.pause();
     audio.currentTime = 0;
+    audio.dataset.playing = "false";
   });
 }
