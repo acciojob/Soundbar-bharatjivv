@@ -9,7 +9,7 @@ const audios = [
 
 function playSound(index) {
   stopSounds(); // stop any currently playing audio
-  audios[index].play();
+//   audios[index].play();
 }
 
 function stopSounds() {
